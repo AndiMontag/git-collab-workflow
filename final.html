@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final.css">
+    <title>Final Project: Two Games</title>
+</head>
+<body>
+    <div class="container"><br>
+        <h1>Andi Montag<br>
+        Shall we play a game?</h1>
+        <!-- tabs -->
+        <div class="tabs">
+            <ul>
+                <li class="trigger" data-target="#coin-toss">Coin Toss</li>
+                <li class="trigger" data-target="#guessing-game">Guessing Game</li>
+            </ul>
+            <div id="coin-toss" class="content">
+                <h3>Toss the coin!</h3>
+                <img id="coinImageSrc" src="both.jpg">
+                <br>
+                <div id="coinTossButtons">
+                    <button id="heads">Heads</button>
+                    <button id="tails">Tails</button>
+                </div>
+                <div id="result">
+                    <p id="resultText"></p>
+                    <span id=winCount></span>
+                    <span id=lossCount></span>
+                </div>
+                <br>
+                <script src="coin.js"></script>
+            </div>
+            <div id="guessing-game" class="content">
+                <h3>Guessing Game</h3>
+                <p>I have selected a random number between 1 and 100. <br>
+                    See if you can guess it in 10 turns or fewer. <br>
+                    I'll tell you if your guess was too high or too low. <br>
+                    </p>
+                    <form class="input-form">
+                        <p>Enter a guess: <input type="number" id="guessField"></p>
+                    </form>
+                    <p id="guesses"><span></span></p>
+                    <p id="feedback"><span></span></p>
+                    <div id="reset-container"></div>
+                    <script src="guessing.js"></script>
+                </div>
+        </div>
+    </div>
+    <script src="final.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #E6E6FA;
+}
+.container {
+    margin: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* tabs styling */
+.tabs > ul{
+    padding: 0;
+}
+.tabs .trigger {
+    list-style-type: none;
+    padding: 10px;
+    background: #dda0dd;
+    margin: 4px;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.tabs .trigger.active{
+    background: #4b0082;
+    color: white;
+}
+.tabs .content{
+    background: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: none;
+}
+.tabs .content.active{
+    display: block;
+}
+h1{
+    text-align: center;
+    color: #663399;
+}
+h3{
+    color: #8821cc;
+}
+h4{
+    color: #ba55d3;
+}
+h5{
+    color: #Da70D6;
+}
+/* guessing game specific */
+.input-form {
+    font-size: x-large;
+}
+#guessinput {
+    font-size: xx-large;
+}
+#guesses {
+    padding: 3px;
+    font-size: xx-large;
+}
+.tooBig {
+    background-color: pink;
+    color: blue;
+}
+.tooSmall {
+    background-color: lightblue;
+    color: blue;
+}
+.tooMany {
+    background-color: red;
+    color: black;
+}
+.justRight {
+    background-color: lightgreen;
+    color: green;
+}
+button {
+    color:#4b0082;
+    background-color: #dda0dd;
+    border: #8821cc;
+    font-size: 16px;
+    border-radius: 4px;
+}
